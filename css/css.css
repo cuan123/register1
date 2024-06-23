@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: bb3812;
+  src: url(../font/bb3812.TTF);
+}
+@font-face {
+  font-family: bb3;
+  src: url(../font/dianjitimuweilai.ttf);
+}
+@font-face {
+  font-family: bb2;
+  src: url(../font/ruimeijiazhangqingpingyingbikaishu.ttf);
+}
+@font-face {
+  font-family: LiShu1;
+  src: url(../font/LiShu1.ttf);
+}
+@font-face {
+  font-family: cangezhuangyuankai;
+  src: url(../font/cangezhuangyuankai.ttf);
+}
+@font-face {
+  font-family: ch2;
+  src: url(../font/ch2.ttf);
+}
+body,
+html {
+  font-family: Arial, sans-serif;
+  background-image: url(../images/background.png);
+  background-size: 100% 100%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  overflow-x: hidden;
+  /* 隐藏方向的滚动条 */
+  overflow-y: auto;
+}
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.header {
+  position: relative;
+  /* 确保元素的定位相对于其正常位置 */
+  z-index: 9999;
+  /* 设置一个较高的层叠顺序值，确保在其他元素之上 */
+}
+header h1 {
+  font-size: 2rem;
+  color: yellow;
+  text-align: center;
+  line-height: 2rem;
+  font-family: cangezhuangyuankai;
+  margin-top: 21rem;
+  /* 向下移动200px */
+}
+.tt {
+  margin-left: 3rem;
+}
+h2 {
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.2rem;
+  font-family: bb2;
+  margin-top: 1rem;
+  /* 向下移动200px */
+}
+input[type="text"] {
+  justify-content: center;
+  /* 水平居中 */
+  margin-top: 0.5rem;
+  padding: 0.15rem;
+  /* 调整内部填充 */
+  width: 17rem;
+  /* 设置宽度 */
+  height: 2rem;
+  /* 设置高度 */
+  font-size: 0.8rem;
+  /* 设置字体大小 */
+  background-color: #f0f0f0;
+  /* 设置背景色 */
+  border: none;
+  /* 去除边框 */
+  outline: none;
+  /* 去除默认的轮廓样式 */
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+  /* 添加阴影效果 */
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 0.1rem rgba(102, 175, 233, 0.6);
+  /* 聚焦时的阴影效果 */
+}
+.box2 {
+  margin-top: 0.5rem;
+  width: 17rem;
+  /* 设置宽度 */
+  background: url(../images/1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.checkbox-label {
+  font-family: bb3;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.checkbox-label input[type="checkbox"] {
+  margin-right: 0.1rem;
+  margin-left: 0.5rem;
+}
+.box3 {
+  margin-top: 2rem;
+  margin-right: 3rem;
+}
+/*图片按钮*/
+.image-button {
+  display: flex;
+  background: url('../images/button_Enter.png');
+  /* 替换为你的图片路径 */
+  background-size: cover;
+  /* 图片覆盖按钮背景 */
+  background-position: center;
+  /* 图片居中 */
+  justify-content: center;
+  /* 水平居中 */
+  width: 7rem;
+  /* 按钮宽度 */
+  height: 2rem;
+  /* 按钮高度 */
+  border: none;
+  /* 无边框 */
+  outline: none;
+  /* 无轮廓 */
+  border-radius: 0.2rem;
+  /* 圆角 */
+  vertical-align: top;
+  cursor: pointer;
+  position: relative;
+  left: 30%;
+  /* 或者根据需要设置偏移量 */
+  top: 0;
+  /* 或者根据需要设置偏移量 */
+}
+.box4 {
+  height: 7rem;
+  width: 100%;
+}
+.no2 {
+  padding: 0.1875rem;
+}
+.no2 .no-hd2 {
+  position: relative;
+}
+.no2 .no-hd2 ul {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  /* 去除内部间距 */
+}
+.no2 .no-hd2 ul li {
+  position: relative;
+  flex: none;
+  line-height: 0.7rem;
+  font-size: 0.7rem;
+  font-family: bb3812;
+  color: black;
+  list-style: none;
+  /* 去除列表样式 */
+  margin: 0;
+  /* 去除外边距 */
+  padding: 0;
+  /* 去除内边距 */
+}
+.no2 .no-hd2 u2 {
+  margin-top: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  /* 去除内部间距 */
+}
+.no2 .no-hd2 u2 li {
+  position: relative;
+  flex: none;
+  line-height: 0.7rem;
+  font-size: 1rem;
+  font-family: cangezhuangyuankai;
+  color: black;
+  list-style: none;
+  /* 去除列表样式 */
+  margin: 0;
+  /* 去除外边距 */
+  padding: 0;
+  /* 去除内边距 */
+}
